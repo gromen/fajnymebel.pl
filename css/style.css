@@ -1026,11 +1026,11 @@ label.error {
 }
 
 .arrow-left:after {
-  content: 'Prev';
+  content: 'Wstecz';
 }
 
 .arrow-right:before {
-  content: 'Next';
+  content: 'dalej';
 }
 
 .arrow-left:before, .arrow-right:after {
