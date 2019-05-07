@@ -308,6 +308,10 @@ label.error {
   box-shadow: 0 15px 34px rgba(197, 164, 126, 0.5);
 }
 
+.btn[type="submit"] {
+  width: 100%;
+}
+
 /* 1.5 Icons */
 
 .icon-next {
@@ -1710,6 +1714,9 @@ img.mfp-img {
   }
   .owl-next {
     right: 3.6em;
+  }
+  .btn[type="submit"] {
+    width: auto;
   }
 }
 
