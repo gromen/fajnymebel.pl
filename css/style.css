@@ -1593,7 +1593,7 @@ img.mfp-img {
   width: 0;
   height: 0;
   border: 16px solid transparent;
-  border-top: 14px solid rgba(0, 0, 0, 0.6));
+  border-top: 14px solid rgba(0, 0, 0, 0.6);
 }
 
 .object-title {
