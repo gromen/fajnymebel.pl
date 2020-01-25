@@ -558,6 +558,10 @@ label.error {
   transition: all 0.3s;
 }
 
+.brand-panel .logo {
+  max-width: 100%;
+}
+
 .brand {
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
@@ -728,13 +732,22 @@ label.error {
   left: 0;
   width: 100%;
   padding: 5.9vmin 0 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.navbar-desctop>.container {
+  position: relative;
 }
 
 .navbar-desctop .brand {
   display: none;
-  position: relative;
-  top: -0.22em;
-  font-size: 1.6em;
+  position: absolute;
+  top: -40px;
+}
+
+.navbar-desctop .brand img {
+  width: 150px;
 }
 
 .navbar-desctop-menu {
@@ -1718,6 +1731,9 @@ img.mfp-img {
   .btn[type="submit"] {
     width: auto;
   }
+  .brand-panel .logo {
+    max-width: 70%;
+  }
 }
 
 /* 12.2 Min width 992px */
@@ -1761,6 +1777,9 @@ img.mfp-img {
 @media (min-width: 1200px) {
   html {
     font-size: 100%;
+  }
+  .brand-panel .logo {
+    max-width: 50%;
   }
 }
 
