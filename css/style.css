@@ -194,6 +194,72 @@ a:focus {
   text-decoration: none;
 }
 
+.notification a {
+  animation-name: shake;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  cursor: pointer;
+}
+
+.notification a:hover {
+  animation-name: shakeAnim;
+}
+
+@keyframes shakeAnim {
+  0% {
+    left: 0
+  }
+  1% {
+    left: -3px
+  }
+  2% {
+    left: 5px
+  }
+  3% {
+    left: -8px
+  }
+  4% {
+    left: 8px
+  }
+  5% {
+    left: -5px
+  }
+  6% {
+    left: 3px
+  }
+  7% {
+    left: 0
+  }
+}
+
+@keyframes shake {
+  0% {
+    left: 0
+  }
+  1% {
+    left: -3px
+  }
+  2% {
+    left: 5px
+  }
+  3% {
+    left: -8px
+  }
+  4% {
+    left: 8px
+  }
+  5% {
+    left: -5px
+  }
+  6% {
+    left: 3px
+  }
+  7% {
+    left: 0
+  }
+}
+
 /* 1.3 Fields */
 
 .form-control, textarea.form-control {
@@ -323,6 +389,24 @@ label.error {
 }
 
 /* 1.6 Loader */
+
+.notification {
+  padding: 25px;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background: #f6f5f3;
+  color: black;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.notification a {
+  font-size: .8rem;
+}
 
 .loader {
   position: fixed;
@@ -536,6 +620,10 @@ label.error {
   2. Header
 -------------------------------------------------------------------------------*/
 
+.header-home {
+  margin-top: 35px;
+}
+
 .header-inner .vertical-panel-content {
   bottom: auto;
   top: 12.2vmin;
@@ -547,7 +635,7 @@ label.error {
   position: absolute;
   z-index: 4;
   left: 0;
-  top: 0;
+  top: 91px;
   width: 39.47vmin;
   height: 40.7vmin;
   padding: 4.8vmin 2em 4.8vmin;
@@ -728,7 +816,7 @@ label.error {
   display: none;
   position: absolute;
   z-index: 2;
-  top: 0;
+  top: 91px;
   left: 0;
   width: 100%;
   padding: 5.9vmin 0 0;
@@ -1709,14 +1797,14 @@ img.mfp-img {
   }
   /* Slider */
   .arrow-left {
-    top: 43.5vmin;
+    top: 48.5vmin;
     bottom: auto;
   }
   .arrow-right {
     left: 28vmin;
     right: auto;
     margin-left: 5em;
-    top: 43.5vmin;
+    top: 48.5vmin;
     bottom: auto;
   }
   /* About */
@@ -1790,14 +1878,14 @@ img.mfp-img {
 @media (max-height: 480px) {
   /* Slider */
   .arrow-left {
-    top: 43.5vmin;
+    top: 56.5vmin;
     bottom: auto;
   }
   .arrow-right {
     left: 28vmin;
     right: auto;
     margin-left: 5em;
-    top: 43.5vmin;
+    top: 56.5vmin;
     bottom: auto;
   }
 }
